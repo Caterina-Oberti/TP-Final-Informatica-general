@@ -1,0 +1,37 @@
+/* General */
+body {
+    background-color:  rgb(145, 242, 145);
+}
+h1, h2, p {
+    color: rgb(0, 75, 0);
+}
+/* Barra de navegación */
+.navbar {
+  background-color: rgb(0, 75, 0) !important;
+}
+
+.navbar .nav-link {
+  color: rgb(145, 242, 145) !important;
+  font-weight: 400; 
+  transition: color 0.3s ease;
+}
+
+
+.navbar .nav-link:hover {
+  color: rgb(243, 227, 107) !important;
+}
+
+
+.navbar .nav-link.active {
+  color: rgb(243, 227, 107) !important; 
+  font-weight: 400; 
+}
+
+
+.navbar-brand {
+  color: #fff !important;
+}
+
+.navbar-toggler {
+  border-color: #fff;
+}
