@@ -33,11 +33,40 @@
 </nav>
     </header>
     <main>
-      <h1></h1>
+      <h1>Formulario de contacto</h1>
+      <p>Llene el siguiente formulario con sus datos si desea contactarse con nosotros</p>
+      <!-- form -->
+      <form id="formContacto" novalidate>
+  <div class="mb-3 w-50">
+    <label for="correoContacto" class="form-label">Correo electrónico</label>
+    <input type="email" class="form-control" id="correoContacto">
+    <small class="error" id="errorCorreo"></small>
+  </div>
+
+  <div class="mb-3 w-50">
+    <label for="nombreContacto" class="form-label">Nombre</label>
+    <input type="text" class="form-control" id="nombreContacto">
+    <small class="error" id="errorNombre"></small>
+  </div>
+
+  <div class="mb-3 w-50">
+    <label for="numeroContacto" class="form-label">Número de teléfono</label>
+    <input type="text" class="form-control" id="numeroContacto">
+    <small class="error" id="errorNumero"></small>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Aceptar</button>
+  <p id="mensajeRespuesta"></p>
+</form>
+
+<footer>
+  <p>Contactese <a href="contacto.html">aquí</a> para más información</p>
+</footer>
     </main>
     <footer>
       <p>Contactese <a href="contacto.html">aquí</a> para más información</p>
     </footer>
+    <script src="javascript/contacto.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
