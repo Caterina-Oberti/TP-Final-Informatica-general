@@ -33,11 +33,41 @@
 </nav>
     </header>
     <main>
-      <h1></h1>
+      <h1>Campos de sugerencias</h1>
+      <p>Si tienes sugerencias para hacer nuestro sitio web mejor porfavor llene los siguientes campos</p>
+      <form id="formSugerencias" novalidate>
+  <div class="mb-3 w-50">
+    <label for="diccionarioSugerencias" class="form-label">Diccionario floral</label>
+    <input type="text" class="form-control" id="diccionarioSugerencias">
+    <small class="error" id="errorDiccionario"></small>
+  </div>
+
+  <div class="mb-3 w-50">
+    <label for="ramosSugerencias" class="form-label">Ramos</label>
+    <input type="text" class="form-control" id="ramosSugerencias">
+    <small class="error" id="errorRamos"></small>
+  </div>
+
+  <div class="mb-3 w-50">
+    <label for="alternativoSugerencias" class="form-label">Usos alternativos</label>
+    <input type="text" class="form-control" id="alternativoSugerencias">
+    <small class="error" id="errorAlternativo"></small>
+  </div>
+
+  <div class="mb-3 w-50">
+    <label for="curiosidadesSugerencias" class="form-label">Curiosidades</label>
+    <input type="text" class="form-control" id="curiosidadesSugerencias">
+    <small class="error" id="errorCuriosidades"></small>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Enviar</button>
+  <p id="mensajeEnviado"></p>
+</form>
     </main>
     <footer>
       <p>Contactese <a href="contacto.html">aquí</a> para más información</p>
     </footer>
+    <script src="javascript/sugerencias.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
