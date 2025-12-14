@@ -38,8 +38,10 @@ h1, h2, p {
 
 /* Galería */
 .carousel-item img {
-  height: 500px;         
   width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
 }
 .carousel-caption {
 p {
@@ -67,15 +69,27 @@ p {
 }
 
 /* Ramos */
-.ramos {
-  text-align: center;
-
-}
-
-.ramos img {
-  width: 400px;
+ .ramos { 
+  text-align: center; 
+} 
+.ramos img { 
+  max-width: 100%;
   height: auto;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  transition: opacity 0.5s ease-in-out;
+  border-radius: 
+  10px; margin-bottom: 10px; 
+  transition: opacity 0.5s ease-in-out; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carousel-item img {
+    max-height: 300px;
+  }
+
+  .ramos img {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
 }
