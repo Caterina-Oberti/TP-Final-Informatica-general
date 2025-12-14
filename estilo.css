@@ -35,3 +35,47 @@ h1, h2, p {
 .navbar-toggler {
   border-color: #fff;
 }
+
+/* Galería */
+.carousel-item img {
+  height: 500px;         
+  width: 100%;
+}
+.carousel-caption {
+p {
+  color: white;
+}
+}
+
+/* Contenedores */
+.container .col {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.btn-primary {
+  background-color: rgb(0, 75, 0) !important; 
+  border-color: rgb(0, 75, 0);
+}
+
+.btn-primary:hover {
+  background-color: rgb(243, 227, 107) !important; 
+  border-color: rgb(243, 227, 107);
+  color: black;
+}
+
+/* Ramos */
+.ramos {
+  text-align: center;
+
+}
+
+.ramos img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: opacity 0.5s ease-in-out;
+}
